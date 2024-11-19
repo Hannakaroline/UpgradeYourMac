@@ -5,6 +5,7 @@
 //  Created by Hanna Torales Palacios on 2024/11/19.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +14,6 @@ struct UpgradeYourMacApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Buildlog.self)
     }
 }
